@@ -1,0 +1,53 @@
+body{
+    background: #91CDD2
+}
+h1{
+    color: green
+}
+h2{
+    color: blueviolet
+}
+.contact{
+    color: blue
+}
+.logo {
+    width: 30px;
+    padding:4px;
+   
+}
+a:hover {
+color: red;
+}
+
+.img-section {
+
+    float:left;
+    display: flex;
+    
+}
+.my-img{
+    width: 120px;
+    height: 140px;
+    border-radius: 50%;
+    display: grid;
+    padding: 25px;
+    
+}
+.about{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.style{
+    background-color: rgba(194, 157, 174, 0.795)
+}
+    
+.languages{
+    font-style: oblique;
+    line-height: 2;
+}
+#edu{
+    font: outline;table-layout: 
+}
+footer {
+    text-align: center;
+}

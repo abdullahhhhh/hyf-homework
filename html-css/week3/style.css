@@ -1,0 +1,348 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    max-width: 1160px;
+    margin: 20px auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-grow:1;
+}
+
+.logo {
+    display: flex;
+    width: 10%;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 6;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    border-bottom: 1px solid #E3571A;
+    color: #E3571A;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 15px 0px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+
+p {
+    margin: 10px 50px 10px 0px;
+}
+
+.progress {
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    width: 100%;
+    height: 1rem;
+}
+
+.progress-bar {
+    padding: 0;
+    height: 1.2rem;
+    border-radius: 3px;
+    background-color: rgb(148, 200, 202);
+    animation-name: progressBar;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0.8;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 100px;
+    }
+    
+    100% {
+        width: 25%;
+    }
+}
+
+.second.progress-bar {
+    animation-name: progressBarSecond;
+}
+
+@keyframes progressBarSecond {
+    0% {
+        width: 100px;
+    }
+    
+    100% {
+        width: 50%;
+    }
+}
+
+.third.progress-bar {
+    animation-name: progressBarThird;
+}
+
+@keyframes progressBarThird {
+    0% {
+        width: 100px;
+    }
+    
+    100% {
+        width: 70%;
+    }
+}
+
+.forth.progress-bar {
+    animation-name: progressBarForth;
+}
+
+@keyframes progressBarForth {
+    0% {
+        width: 100px;
+    }
+    
+    100% {
+        width: 95%;
+    }
+}
+
+label, option {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    margin: auto 15px;
+}
+
+li {
+    list-style: none;
+}
+
+.mustInfo, .profileDescription, .shippingInfo, .contactInfo, 
+.sign-up, .itemsKind, .images, .payInfo, .finish  {
+    padding: 20px;
+}
+
+input, select, datalist {
+    width: 25rem;
+    height: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+}
+
+
+
+input[name=exp-month], input[name=exp-year] {
+    width: 12rem;
+    border-radius: 50px;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin-left: 5px;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: row; 
+    padding: 10px 0px;
+}
+
+.column div {
+    display: flex;
+    flex-grow: 1;  
+}
+
+.itemsKind {
+    width: 50%;
+}
+
+.profileDescription {
+    display: flex;
+    flex-direction: row;
+}
+
+p em {
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+
+textarea {
+    width: 80%;
+    height: 6rem;
+}
+
+input[name=shipping-address]:checked ~ div {
+    height: 0px;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+button {
+    width: 20%;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(76, 185, 204);
+    opacity: 0.3;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+section + a {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+section img {
+    width: 500px;
+    position: relative;
+    float: center;
+}
+
+.last-page ul li {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.last-page ul li:hover {
+    border: 1px solid #E3571A;
+}
+
+.finish {
+    text-align: center;
+}
+
+.orange {
+    color: #E3571A;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 10px;
+}
+  
+.container label {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.container label div {
+    border: 2px solid #64635E;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+  
+.container label div img {
+    height: 100%;
+    max-width: 100%;
+}
+
+figcaption span {
+    margin-right: 10px;
+}
+   
+figcaption {
+    display: flex;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        width: 100vm;
+        margin: 5px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .profileDescription {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    p {
+        margin: 10px 0px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 9rem;
+    }
+
+    label, option {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    .mustInfo, .profileDescription, .shippingInfo, .contactInfo, 
+    .sign-up, .itemsKind, .images, .payInfo, .finish  {
+        padding: 20px;
+    }
+    
+    input, select, datalist {
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    input[name=exp-month], input[name=exp-year] {
+        width: 6rem;
+    }
+    
+         
+}
