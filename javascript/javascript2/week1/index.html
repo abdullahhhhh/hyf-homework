@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>spirit</title>
+    <link rel="stylesheet" href="spirit.css">
+ </head>
+ <body>
+    <div>
+     <form action="namegenerator" method="GET">
+      <div class="maindiv">
+         <label for="firstName" id="nameLabel">First Name</label>
+         <input type="text" name="firstname" id="firstName" required>
+      </div>
+      <div class="btn">
+       <input id="btn" type="button" name="button" value="submit" onclick="spiritAnimalNameGenerator()">
+      </div>
+      <div class="mainid">
+         <p id="generalText">Your spirit animal name will be</p>
+         <p id="spiritAnimalNameOutPut"></p>
+         </div>
+         <!-- //average  -->
+         <h1> average and median</h1>
+    
+         <label for="average"> Result of Average of (Houses Price): </label>
+         <input type="text" name="average" id="average"> </br> </br>
+         <label for="median"> Result of Median of (Houses price): </label>
+         <input type="text" name="median" id="median"> <br> <br>
+         <button onclick="myFunction()">Show Result! </button>
+     
+       <script src="mAverage.js"></script>
+  <script src="spiritanimal.js"></script>
+ </body>
+</html>
