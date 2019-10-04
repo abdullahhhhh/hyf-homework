@@ -7,12 +7,13 @@ require("dotenv").config();
 var pool = mysql.createPool({
   connectionLimit: 10,
   host: process.env.DB_HOST,
-  user: 'root',//process.env.DB_USER,
-  password: 'vuf2019',//process.env.DB_PASSWORD,
-  database: 'Meal_sharing', //process.env.DB_DATABASE,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE,
   port: process.env.DB_PORT,
   multipleStatements: true
 });
+
 
 pool.getConnection((err, connection) => {
   if (err) {
