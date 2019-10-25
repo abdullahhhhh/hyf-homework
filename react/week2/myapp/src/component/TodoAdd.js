@@ -1,14 +1,16 @@
   
 import React, { Component } from 'react';
-// import TodoAdd from './TodoAdd';
-export class AddTodo extends Component { 
-
+import { jsxClosingElement } from '@babel/types';
+ class TodoAdd extends Component { 
+handleSubmet=()=> {
+console.log("hi")
+}
     render() {
       const {id, text} = this.props;    
        console.log(text);
       return (
         <div className="addDiv" >        
-          <button onClick={this.props.TodoAdd.bind(this, id)} >Add Todo</button>
+          <button onClick={this.handleSubmet} >Add Todo</button>
           <p/>{''} {text}       
         </div>
       )

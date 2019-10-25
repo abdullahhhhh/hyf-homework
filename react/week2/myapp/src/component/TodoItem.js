@@ -6,7 +6,7 @@ export class TodoItem extends Component {
         return (
           <div>
             <p>
-              <input type="checkbox" onChange={this.props.markComplete.bind(this, id) } /> {' '}
+              <input type="checkbox" onChange={ } /> {' '}
               { description }
               <button onClick={this.props.delTodo.bind(this, id)}>Delete</button>
             </p>
